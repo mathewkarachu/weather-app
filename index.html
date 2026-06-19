@@ -3,31 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="icon" href="lightning.png">
+    
+    <title>Syzy WeatherAPP</title>
     <link rel="stylesheet" href="style.css">
-    <div id="all">
+    </head>
+   
+    
+
+<body>
+     <div id="all">
         <div>
-        <div id="city">San Francisco, CA 🌍</div>
+            
+        <div id="city_name">San Francisco, CA 🌍</div>
+        <div id="top">
+            <input id="city" placeholder="Enter City">
+            <button id="dn" type="button" onclick="GetWeatherData()"
+            onmouseout="this.classList.add('done')"
+             class="done">DONE</button>
+        </div>
         <div id="emoji">⛅</div>
-        <h1>68°</h1>
+        <h1 id="main">68°</h1>
         <p id="desc">Partly Cloudy</p>
-        <small>Feels like 66</small>
+        <small id="s">Feels like 66°</small>
         <div id="card">
             <div id="humidity" class="humidity">
                 <p>💧</p>
                 <p class="element">Humidity</p>
-                <P>56%</P>
+                <P id="hum">56%</P>
 
             </div>
             <div id="wind" class="wind">
                 <p>💨</p>
-                <p class="element">wind</p>
-                <p style="font-size: 6px;">8 mph</p>
+                <p class="element" id="wind" >wind</p>
+                <p  id="wins">8mph</p>
             </div>
             <div id="temp" class="temp">
                 <p>🌡️</p>
                 <p class="element">Temp</p>
-                <p>66</p>
+                <p id="tem">66°</p>
             </div>
 
         </div>
@@ -35,10 +49,7 @@
     
     </div>
         
-   
-    
-</head>
-<body>
+   <script src="script.js"></script>
     
 </body>
 </html>
